@@ -10,7 +10,6 @@ function App() {
       </header>
        <SpinningCube />
        <div>
-
        <Typography variant="h6" color='white' >
   Policy ID: 358f48405d151ecbc59358594fe9904e4d6cd5f9106bc0c6e75ad738
 </Typography>
