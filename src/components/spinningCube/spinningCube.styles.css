@@ -1,0 +1,65 @@
+/* .spinningCubePage {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+.cube {
+ transform-style: preserve-3d;
+ animation: spin 5s infinite ease-out;
+ position: relative;
+ width: 100px;
+ height: 100px;
+ top: 25%;
+ left: 50%;
+ margin-left: -100px;
+ margin-top: -100px;
+}
+
+.cube div {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  box-shadow: inset 0px 0px 0px 1px white;
+  background: black;
+  color: white;
+  display: block;
+  position: absolute;
+}
+
+.cube div.top {
+  transform: rotateX(90deg); 
+ margin-top: -100px;
+}
+
+.cube div.right {
+  transform: rotateY(90deg); 
+ margin-left: 100px;
+}
+
+.cube div.bottom {
+  transform: rotateX(-90deg); 
+ margin-top: 100px;
+}
+
+.cube div.left {
+  transform: rotateY(-90deg); 
+ margin-left: -100px;
+}
+
+.cube div.front {
+ transform: translateZ(100px);
+}
+
+.cube div.back {
+ transform: translateZ(-100px);
+ 
+}
+
+@keyframes spin {
+ 0% {-webkit-transform: rotateX(-20deg) rotateY(20deg);}
+ 100% {-webkit-transform: rotateX(-20deg) rotateY(740deg);}
+}
