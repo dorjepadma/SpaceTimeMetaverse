@@ -28,35 +28,42 @@
   color: white;
   display: block;
   position: absolute;
+  -webkit-box-shadow: 5px 5px 15px 5px #FFFEFC; 
+box-shadow: 5px 5px 15px 5px #FFFEFC;
 }
 
 .cube div.top {
   transform: rotateX(90deg); 
  margin-top: -100px;
+ font-size: x-large;
 }
 
 .cube div.right {
   transform: rotateY(90deg); 
  margin-left: 100px;
+ font-size: x-large;
 }
 
 .cube div.bottom {
   transform: rotateX(-90deg); 
  margin-top: 100px;
+ font-size: x-large;
 }
 
 .cube div.left {
   transform: rotateY(-90deg); 
  margin-left: -100px;
+ font-size: x-large;
 }
 
 .cube div.front {
  transform: translateZ(100px);
+ font-size: x-large;
 }
 
 .cube div.back {
  transform: translateZ(-100px);
- 
+ font-size: x-large;
 }
 
 @keyframes spin {
