@@ -2,6 +2,7 @@ import Header from './components/header/header.component';
 import SpinningCube from './components/spinningCube/spinningCube.component.jsx';
 import { ThemeProvider, Typography } from '@mui/material';
 import theme from './components/ui/Theme.js';
+// import DiscordIcon from '@mui/icons-material/Discord'
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 </Typography>
        </div>
     </div>
+    
   </ThemeProvider>
   );
 }
