@@ -1,13 +1,14 @@
+import Header from './components/header/header.component';
 import SpinningCube from './components/spinningCube/spinningCube.component.jsx';
-import Typography from '@mui/material/Typography';
+import { ThemeProvider, Typography } from '@mui/material';
+import theme from './components/ui/Theme.js';
 import './App.css';
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
+    <Header/>
     <div className="App">
-      <header className="App-header">
-        Space Time Metaverse
-      </header>
        <SpinningCube />
        <div>
        <Typography variant="h3" color='white' >
@@ -17,6 +18,7 @@ function App() {
 </Typography>
        </div>
     </div>
+  </ThemeProvider>
   );
 }
 
